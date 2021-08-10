@@ -70,7 +70,7 @@ export const removeOne = model => async (req, res) => {
     if (!query) {
       return res.status(400).end()
     }
-    return res.status(200).json({data:query})
+    return res.status(200).json({ data: query })
   } catch (error) {
     return res.status(400).json({ message: error })
   }
